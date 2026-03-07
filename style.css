@@ -22,7 +22,7 @@ body {
     color: var(--text-primary);
     overflow-x: hidden;
     line-height: 1.6;
-    cursor: none; /* Hide default for custom cursor */
+    cursor: default; /* Hide default for custom cursor */
 }
 
 h1, h2, h3, h4, h5, h6, .nav-brand {
@@ -371,7 +371,7 @@ ul {
 /* Skills */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
 }
 
@@ -414,6 +414,7 @@ ul {
     position: relative;
     max-width: 800px;
     margin: 0 auto 50px auto;
+    overflow: hidden;
 }
 
 .timeline::after {
@@ -733,4 +734,5 @@ footer {
         display: block;
     }
 }
+
 
