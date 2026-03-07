@@ -570,40 +570,6 @@ ul {
     padding: 4px 10px;
     border-radius: 4px;
 }
-.project-modal {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.8);
-    backdrop-filter: blur(8px);
-    justify-content: center;
-    align-items: center;
-    z-index: 2000;
-}
-
-.modal-content {
-    background: var(--bg-color);
-    padding: 30px;
-    width: 90%;
-    max-width: 600px;
-    border-radius: 20px;
-    text-align: center;
-}
-
-.modal-content img {
-    width: 100%;
-    border-radius: 15px;
-    margin: 15px 0;
-}
-
-.close-btn {
-    position: absolute;
-    right: 20px;
-    top: 10px;
-    font-size: 30px;
-    cursor: pointer;
-    color: white;
-}
 
 /* Contact */
 .contact-wrapper {
@@ -776,6 +742,7 @@ footer {
         display: block;
     }
 }
+
 
 
 
