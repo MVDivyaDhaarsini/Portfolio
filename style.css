@@ -352,6 +352,9 @@ ul {
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
+    object-position: center top;    /* moves image up */
+    object-position: center bottom; /* moves image down */
+    object-position: 50% 40%;       /* exact control: horizontal 50%, vertical 40% */
 }
 
 @keyframes pulse-border {
@@ -739,5 +742,6 @@ footer {
         display: block;
     }
 }
+
 
 
