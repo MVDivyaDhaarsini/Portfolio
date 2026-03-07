@@ -328,6 +328,7 @@ ul {
     padding: 10px;
     background: var(--accent-gradient);
     animation: pulse-border 3s infinite;
+    overflow: hidden;
 }
 
 .profile-placeholder {
@@ -343,12 +344,14 @@ ul {
     font-weight: 800;
     color: var(--text-secondary);
     border: 4px solid var(--bg-color);
-    .profile-img-wrapper img {
+}
+
+/* Fix image fitting inside circle */
+.profile-img-wrapper img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    object-fit: cover;  /* VERY IMPORTANT */
-}
+    object-fit: cover;
 }
 
 @keyframes pulse-border {
@@ -736,4 +739,5 @@ footer {
         display: block;
     }
 }
+
 
