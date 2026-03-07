@@ -8,6 +8,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+   <!-- PROJECT MODAL -->
+<div class="project-modal" id="projectModal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+
+        <h2 id="modalTitle"></h2>
+        <img id="modalImage" src="" alt="Project Image">
+
+        <p id="modalDescription"></p>
+
+        <div id="modalTech" class="project-tech"></div>
+    </div>
+</div> 
+    <script>
+function openModal(title, image, description, tech) {
+
+    document.getElementById("projectModal").style.display = "flex";
+
+    document.getElementById("modalTitle").innerText = title;
+    document.getElementById("modalImage").src = image;
+    document.getElementById("modalDescription").innerText = description;
+
+    const techContainer = document.getElementById("modalTech");
+    techContainer.innerHTML = "";
+
+    tech.forEach(item => {
+        let span = document.createElement("span");
+        span.innerText = item;
+        techContainer.appendChild(span);
+    });
+}
+
+function closeModal() {
+    document.getElementById("projectModal").style.display = "none";
+}
+</script>
 <body>
     <div class="custom-cursor" id="custom-cursor"></div>
     <div class="custom-cursor-follower" id="custom-cursor-follower"></div>
@@ -265,6 +301,7 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
