@@ -741,7 +741,31 @@ footer {
     .mobile-menu-btn {
         display: block;
     }
+    /* PROJECT BACKGROUND FIX */
+.project-card{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
 }
+
+/* Dark overlay for text visibility */
+.project-card::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    border-radius: inherit;
+}
+
+/* Keep text above overlay */
+.project-content{
+    position: relative;
+    z-index: 2;
+}
+}
+
 
 
 
