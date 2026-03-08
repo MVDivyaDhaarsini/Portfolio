@@ -741,30 +741,30 @@ footer {
     .mobile-menu-btn {
         display: block;
     }
-    /* PROJECT BACKGROUND FIX */
+  /* Fix project background images */
 .project-card{
     position: relative;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: white;
+    overflow: hidden;
 }
 
-/* Dark overlay for text visibility */
+/* Make text visible */
 .project-card::before{
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.55);
-    border-radius: inherit;
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.45);
 }
 
-/* Keep text above overlay */
 .project-content{
-    position: relative;
-    z-index: 2;
+    position:relative;
+    z-index:2;
+    color:#fff;
 }
 }
+
 
 
 
